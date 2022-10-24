@@ -7,7 +7,7 @@ import time
 def convertToRGB(img):
     return cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 haar_face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_alt.xml')
-test1 = cv2.imread('test1.jpg')
+test1 = cv2.imread('test7.jpg')
 gray_img = cv2.cvtColor(test1, cv2.COLOR_BGR2GRAY)
 plt.imshow(gray_img, cmap='gray')
 faces = haar_face_cascade.detectMultiScale(gray_img, scaleFactor=1.1, minNeighbors=5)
